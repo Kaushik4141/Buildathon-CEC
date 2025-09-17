@@ -1,5 +1,4 @@
 import React from 'react';
-import './RetroFooter.css'; // We'll create this CSS file next
 
 const RetroFooter = () => {
   return (
