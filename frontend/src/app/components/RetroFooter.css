@@ -4,8 +4,12 @@
   color: #fff;
   background: linear-gradient(to bottom, #222 0%, #000 100%);
   border-top: 4px solid #ff3300;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   overflow: hidden;
+  z-index: 1000; /* Ensure footer stays above other content */
 }
 
 .retro-footer a {
@@ -95,6 +99,7 @@
   line-height: 30px;
   font-weight: bold;
   border: 1px solid #555;
+  transition: all 0.3s;
 }
 
 .social-icon:hover {
@@ -134,6 +139,7 @@
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
+  transition: background 0.3s;
 }
 
 .newsletter-input button:hover {
@@ -194,5 +200,14 @@
   
   .footer-section {
     margin-bottom: 30px;
+  }
+  
+  .newsletter-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter-input button {
+    width: 100%;
   }
 }
